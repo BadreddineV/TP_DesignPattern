@@ -41,12 +41,20 @@ public class VisitNbPhotos implements Visiteur {
 		System.out.println(" nom Auteur " +v1.getnomAuteur());
 		
 	}
-	
+	/* Question 7: Consulter le texte d'un auteur donné . */
 	public void getterArticle(Article a) {
 		System.out.println(" texte Article: " +a.getTexte());
 		System.out.println("Auteur article: " +a.getNomAuteur());
 		
 	}
+
+	@Override
+	public void getTexte(Article a) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 
 	
 	

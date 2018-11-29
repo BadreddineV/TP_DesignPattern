@@ -16,16 +16,23 @@ public class Main {
         assert (al.toString().equals(res)) : "Bug" ;
         System.out.println(al.getNombreDePhotos());
         Video v1= new Video(2018,"Album Name" ,"Name fichier1","Auteur1");
-        System.out.println("Nom film: "+ v1.getnomFichier() + " nom Auteur: " + v1.getNomAuteur());
+        System.out.println("Nom film: "+ v1.getnomFichier() + " nom Auteur: " + v1.getAuteur());
         
         Article a = new Article (2016,"NR","Le pouvoir d'achat est pertinant", "isabelle");
         Article a1 = new Article (2016,"NMR","Le pouvoir d'achat n'est pertinant", "mirabelle");
         //public Article(int d,String nom,String T,String auteur) 
-        System.out.println(a.getNomAuteur());
+        System.out.println(a.getAuteur());
         
         al.ajouter(a,a1);
         System.out.println(al.getNombreDePhotos());
-        System.out.println(al.researchText("isabelle",al));
-       
+        System.out.print("L'auteur "+a.getAuteur() +" a écrit le texte suivant: " +a.getTexte() );
+        /* Teste du designe Pattern Adapter */
+        //SupportDeComm s = new SupportDeComm ();
+
+        Photo photo1 = new Photo (1,"Photo 1","Jean mickeal","Fichier Image");
+  
+        @SuppressWarnings("rawtypes")
+		Adaptateur A = new Adaptateur(2,"James Lebonnet");
+        
     }
 }

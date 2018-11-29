@@ -15,17 +15,6 @@ public class Album extends Media implements Iterable<Media>{
             this.als .add(sc) ;
     }
     
-    public String researchText(String t,Media... s) {
-        for (Media sc : s) {
-        	
-        		System.out.print(sc.getNomAuteur());
-        		if(t.equals(sc.getNomAuteur())==true) {
-            		System.out.println( sc.getTexte());
-            	}
-        	
-        }
-        return null;
-    }
 
 
     @Override
@@ -45,14 +34,16 @@ public class Album extends Media implements Iterable<Media>{
         return this.als.size();
     }
 
+
+
 	@Override
-	protected Object getNomAuteur() {
+	protected String getTexte() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	protected String getTexte() {
+	protected String getAuteur() {
 		// TODO Auto-generated method stub
 		return null;
 	}

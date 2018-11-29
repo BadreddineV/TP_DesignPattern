@@ -13,7 +13,7 @@ public abstract class Media {
         this.nom = nom;
     }
 
-	protected abstract Object getNomAuteur();
+	protected abstract String getAuteur();
 
 	protected abstract String getTexte();
 

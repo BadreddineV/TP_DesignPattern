@@ -21,7 +21,7 @@ public class Photo extends Media {
     }
 
 	@Override
-	protected String getNomAuteur() {
+	protected String getAuteur() {
 		return auteur;
 	}
 

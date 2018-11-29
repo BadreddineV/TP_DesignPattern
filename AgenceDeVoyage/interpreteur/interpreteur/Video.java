@@ -3,6 +3,7 @@ package interpreteur;
 public class Video extends Media {
 	protected String nomFichier;
 	protected String auteur;
+	protected String format;
 	public Video(int d,String nom, String nF,String auteur) {
 		super(d, nom);
 		this.nomFichier = nF;
@@ -12,10 +13,12 @@ public class Video extends Media {
 		return nomFichier;
 	}
 	
-	
-	public void ConsulterVideo() {}
+	/*Question 7 : Consulter des videos sous format mp4*/
+	public void ConsulterVideo() {
+		
+	}
 	@Override
-	protected String getNomAuteur() {
+	protected String getAuteur() {
 		return auteur;
 	}
 	@Override
