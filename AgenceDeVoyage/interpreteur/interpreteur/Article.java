@@ -18,7 +18,7 @@ public class Article extends Media {
 	}
 
 	@Override
-	protected int getNombreDePhotos() {
+	public int getNombreDePhotos() {
 		return 0;
 	}
 	

@@ -41,27 +41,6 @@ public class Album extends Media implements Iterable<Media>{
     	//return this.getNombreDePhotos();
     	//return countPhoto;
     }
-/*
-    public int getNombreDePhotos(){
-    	int count=0;
-    	for (Media sc :als) {
-        	count=count+ sc.getNombreDePhotos();
-        }
-    	System.out.print(count);
-    	return count;
-    }
-*/
-	@Override
-	protected String getAuteur() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected String getTexte() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	
 

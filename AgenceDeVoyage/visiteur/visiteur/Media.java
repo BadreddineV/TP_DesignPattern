@@ -20,12 +20,16 @@ public abstract class Media {
 		return 0;
 	}
 
-	protected String getAuteur() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public String getAuteur() {
+		 
+		return nom;
+	}
+	public int getDate() {
+		return annee;
 	}
 
-	protected String getTexte() {
+	public String getTexte() {
 		// TODO Auto-generated method stub
 		return null;
 	}

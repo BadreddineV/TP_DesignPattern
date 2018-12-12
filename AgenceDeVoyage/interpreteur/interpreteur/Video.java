@@ -18,16 +18,19 @@ public class Video extends Media {
 		
 	}
 	@Override
-	protected String getAuteur() {
+	public String getAuteur() {
 		return auteur;
 	}
 	@Override
-	protected String getTexte() {
+	public String getTexte() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	protected int getNombreDePhotos(){
+	public int getNombreDePhotos(){
 		return 0;
+	}
+	public String getFormat() {
+		return format;
 	}
 
 }

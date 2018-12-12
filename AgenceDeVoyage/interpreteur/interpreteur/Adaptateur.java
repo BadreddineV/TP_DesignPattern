@@ -15,8 +15,29 @@ public class Adaptateur extends Media {
 	}
 
 	public String getAuteur() {
+		return super.nom;
+	}
+	public int getDate() {
+		return super.annee;
+	}
+	
+	public String getFichier() {
+		return s.getFichier();
+	}
+	public String getTexte() {
+		return s.getTexte();
+	}
+
+	@Override
+	public int getNombreDePhotos() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	/*
+	public String getAuteur() {
 		
-		return s.getAuteur();
+		return super.getAuteur();
 	}
 
 	@Override
@@ -25,8 +46,8 @@ public class Adaptateur extends Media {
 	}
 
 	@Override
-	protected int getNombreDePhotos() {
+	public int getNombreDePhotos() {
 		return 0;
 	}
-
+*/
 }

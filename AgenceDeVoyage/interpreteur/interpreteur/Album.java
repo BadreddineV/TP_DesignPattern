@@ -16,15 +16,13 @@ public class Album extends Media implements Iterable<Media>{
     }
     
 
-
-    @Override
     public String toString() {
         return "Album{" +
                 "als=" + als +
                 '}';
     }
 
-    @Override
+    
     public Iterator<Media> iterator() {
         return this.als.iterator();
     }
@@ -39,16 +37,12 @@ public class Album extends Media implements Iterable<Media>{
     	//return this.als.size();
     }
 
-
-
-	@Override
-	protected String getTexte() {
+	public String getTexte() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	protected String getAuteur() {
+	public String getAuteur() {
 		// TODO Auto-generated method stub
 		return null;
 	}
