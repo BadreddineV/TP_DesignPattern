@@ -17,5 +17,7 @@ public abstract class Media {
 
 	protected abstract String getTexte();
 
+	public abstract int getNombreDePhotos();
+
     
 }

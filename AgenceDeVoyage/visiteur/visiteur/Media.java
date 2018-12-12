@@ -16,5 +16,20 @@ public abstract class Media {
     public void accept(Visiteur v) {
 	}
 
+	public int getNombreDePhotos() {
+		return 0;
+	}
+
+	protected String getAuteur() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	protected String getTexte() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 }
 

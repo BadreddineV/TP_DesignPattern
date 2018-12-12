@@ -12,7 +12,7 @@ public class Article extends Media {
 	public String getTexte() {
 		return text;
 	}
-	public String getNomAuteur() {
+	public String getAuteur() {
 		return nomAuteur;
 	}
 	public void accept(Visiteur v) {

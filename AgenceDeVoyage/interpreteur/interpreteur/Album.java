@@ -31,7 +31,12 @@ public class Album extends Media implements Iterable<Media>{
 
 
     public int getNombreDePhotos(){
-        return this.als.size();
+        int count=0;
+    	for (Media sc :als) {
+        	count=count+ sc.getNombreDePhotos();
+        }
+    	return count;
+    	//return this.als.size();
     }
 
 

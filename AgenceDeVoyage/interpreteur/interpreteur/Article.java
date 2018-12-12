@@ -16,5 +16,10 @@ public class Article extends Media {
 	public String getAuteur() {
 		return auteur;
 	}
+
+	@Override
+	protected int getNombreDePhotos() {
+		return 0;
+	}
 	
 }

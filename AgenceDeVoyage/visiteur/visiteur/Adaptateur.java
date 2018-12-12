@@ -1,19 +1,37 @@
 package visiteur;
+import appli.*;
 
-import java.util.ArrayList;
 
-@SuppressWarnings("unused")
+
 public class Adaptateur extends Media {
-	//SupportDeComm s;
+	SupportDeComm s;
+	int date;
+	String name; 
 	
-	public Adaptateur(int d, String nom) {
+	public Adaptateur(SupportDeComm s,int d, String nom) {
 		super(d,nom);
-		//this.s=s;
+		date = d;
+		name =nom;
+		this.s=s;
 	}
 	
 	public void accept(Visiteur v) {
     	v.visit(this);
     	}
-
 	
+	public String getNom() {
+		return super.nom;
+	}
+	public int getDate() {
+		return super.annee;
+	}
+	public String getAuteur() {
+		return super.getAuteur();
+	}
+	public String getFichier() {
+		return s.getFichier();
+	}
+	public String getTexte() {
+		return s.getTexte();
+	}
 }

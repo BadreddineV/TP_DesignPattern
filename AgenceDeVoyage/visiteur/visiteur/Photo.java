@@ -5,6 +5,7 @@ package visiteur;
 public class Photo extends Media {
     protected String auteur;
     protected String nomFichier;
+    
     public Photo(int d, String nom, String auteur, String nomFichier) {
         super(d, nom);
         this.auteur = auteur;
@@ -24,5 +25,16 @@ public class Photo extends Media {
 	public void accept(Visiteur v) {
     	v.visit(this);
     	}
+	
+	public String getAuteur() {
+		return auteur;
+	}
+	public String getFichier() {
+		return nomFichier;
+	}
+	
+	
+	
+	
 }
 	

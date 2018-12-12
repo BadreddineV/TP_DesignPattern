@@ -26,5 +26,8 @@ public class Video extends Media {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	protected int getNombreDePhotos(){
+		return 0;
+	}
 
 }

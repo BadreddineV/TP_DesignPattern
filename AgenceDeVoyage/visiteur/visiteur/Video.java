@@ -10,15 +10,27 @@ public class Video extends Media {
 		this.nomAuteur = nA;
 		this.nomFichier = nF;
 	}
-	public String getnomFichier() {
+	public String getFichier() {
 		return nomFichier;
 	}
-	
-	public String getnomAuteur() {
-		return nomAuteur;
-	}
+
 	public void accept(Visiteur v) {
     	v.visit(this);
     	}
+	
+
+	protected String getAuteur() {
+		return nomAuteur;
+	}
+	@Override
+	protected String getTexte() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public int getNombreDePhotos() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }
